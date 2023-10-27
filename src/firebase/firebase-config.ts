@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA8ueaHlJTl0I8YFTFQq4I1lHt-cnhW5zU",
-  authDomain: "tutorialtodolist-d31eb.firebaseapp.com",
-  projectId: "tutorialtodolist-d31eb",
-  storageBucket: "tutorialtodolist-d31eb.appspot.com",
-  messagingSenderId: "264445525330",
-  appId: "1:264445525330:web:4af9fde099856d1cc30e8b",
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID,
 };
 
 export const app = initializeApp(firebaseConfig);
