@@ -1,9 +1,9 @@
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "./firebase-config";
 
-interface Task {
+export interface Task {
   id: string;
-  name?: string;
+  task?: string;
 }
 
 export const fetchCurrentTasks = async () => {

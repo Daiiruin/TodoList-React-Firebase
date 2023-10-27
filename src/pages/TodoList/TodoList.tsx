@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import { addTask } from "../../firebase/addTask";
 import { deleteTask } from "../../firebase/deleteTask";
-import { fetchCurrentTasks } from "../../firebase/getCurrentTasks";
+import { Task, fetchCurrentTasks } from "../../firebase/getCurrentTasks";
 import { fetchFinishedTasks } from "../../firebase/getFinishedTasks";
 import { updateTask } from "../../firebase/updateTask";
 import "./TodoList.scss";
 
 export const TodoList = () => {
   const [task, setTask] = useState("");
-  const [currentTasks, setCurrentTasks] = useState([]);
-  const [finishedTasks, setFinishedTasks] = useState([]);
+  const [currentTasks, setCurrentTasks] = useState<Task[]>([]);
+  const [finishedTasks, setFinishedTasks] = useState<Task[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -37,7 +37,7 @@ export const TodoList = () => {
     fetchData();
   }, []);
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTask(e.target.value);
   };
 
