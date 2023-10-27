@@ -1,4 +1,4 @@
-# Firebase CRUD To-Do List with ReactJS and TypeScript
+#🔱Firebase CRUD To-Do List with ReactJS and TypeScript
 
 This is a simple To-Do List application built using ReactJS, TypeScript, and Firebase. It demonstrates the fundamental CRUD (Create, Read, Update, Delete) operations with Firebase as the backend for real-time data synchronization.
 
