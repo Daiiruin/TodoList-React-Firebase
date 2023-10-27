@@ -1,0 +1,100 @@
+@import "../../style/variables.scss";
+
+.TodoListContainer {
+  background-color: $secondary-color;
+  width: 90vw;
+  height: 80vh;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.TitleTodoList {
+  font-weight: $fw-bold;
+  font-size: $fs-large;
+}
+
+.InputButtonContainer {
+  margin-top: 16px;
+  display: flex;
+}
+
+.InputAddTodo {
+  height: 32px;
+  width: 320px;
+  border-radius: 80px 0px 0px 80px;
+  border: 1px solid $primary-color;
+  padding-left: 10px;
+}
+
+.ButtonAddTodo {
+  border-radius: 0px 80px 80px 0px;
+  height: 32px;
+  width: 42px;
+  background-color: $primary-color;
+  border: none;
+  color: $secondary-color;
+  font-size: $fs-medium;
+  cursor: pointer;
+}
+
+.TasksLists {
+  height: 60vh;
+  width: 60vw;
+  display: flex;
+  margin-top: 26px;
+}
+
+.CurrentTasks {
+  border-right: 1px solid $primary-color;
+}
+
+.CompletedTasks {
+  border-left: 1px solid $primary-color;
+}
+
+.CurrentTasks,
+.CompletedTasks {
+  height: 60vh;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.TasksTitle {
+  font-size: $fs-medium;
+  font-weight: $fw-bold;
+}
+
+.TasksContainer {
+  margin-top: 26px;
+}
+
+.todoButton {
+  border: 1px solid $primary-color;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.currentTaskText,
+.finishedTaskText {
+  font-size: $fs-small;
+  font-weight: $fw-light;
+  color: $primary-color;
+}
+
+.finishedTaskText {
+  color: green;
+}
+
+.taskContainer {
+  display: flex;
+}
